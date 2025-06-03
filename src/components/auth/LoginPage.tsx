@@ -3,6 +3,7 @@ import { useForm, type SubmitHandler } from "react-hook-form";
 import { toast } from "react-toastify";
 import Api from "../../ConstAPI";
 import type { ILogin } from "../../interface/interface";
+import { Link } from "react-router";
 
 const LoginPage = () => {
   const {
@@ -78,6 +79,13 @@ const LoginPage = () => {
             </p>
           )}
         </div>
+       <Link
+          to="/register"
+          className="block mb-5 text-blue-600 hover:underline hover:text-blue-800 transition duration-200"
+        >
+          إنشاء حساب
+        </Link>
+
 
         <button
           type="submit"

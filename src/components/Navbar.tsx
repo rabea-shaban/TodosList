@@ -8,7 +8,7 @@ import {
   MenuItems,
 } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
-import { NavLink, useLocation } from "react-router";
+import { NavLink } from "react-router";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");

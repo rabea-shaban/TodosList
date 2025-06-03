@@ -1,54 +1,70 @@
-# React + TypeScript + Vite
+# ✅ Todos List App (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A secure and simple Todo management app built with **React.js**, **React Query**, and **JWT Authentication**.  
+Each user can log in, view their own tasks, and perform full CRUD operations. All pages are protected — no access without a valid JWT.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+🔗 [https://todos-list-zeta.vercel.app/](https://todos-list-zeta.vercel.app/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🛠 Tech Stack
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- React.js + Vite
+- React Query
+- Axios
+- Tailwind CSS (or plain CSS)
+- react-hot-toast
+- JWT Authentication (from Strapi backend)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🔐 Authentication
+
+- JWT token is returned from **Strapi** after login.
+- Token is stored in **localStorage**.
+- All protected routes check for token and redirect if not found.
+- Axios sends `Authorization: Bearer <token>` in headers.
+
+---
+
+## 🔧 Features
+
+- 🔒 Secure Login
+- 🧾 Display todos only after login
+- ➕ Add new todo
+- 📝 Edit todo
+- ❌ Delete todo
+- ⚡ React Query for fast data fetching
+- 🔔 Toast notifications with `react-hot-toast`
+- ⛔ 404 / Unauthorized route protection
+
+---
+
+---
+
+## ▶️ Getting Started
+
+### 1. Clone the frontend
+
+```bash
+git clone https://github.com/rabea-shaban/TodosList
+cd TodosList
+npm install
+npm run dev
+📎 Useful Links
+Frontend Repo: github.com/rabea-shaban/TodosList
+
+Live App: todos-list-zeta.vercel.app
+
+👨‍💻 Developed by
+Rabea Shaban Elzayat
+🌐 rabeashaban.site
+📧 engrabeashaban@gmail.com
+📱 WhatsApp
+🔗 LinkedIn
+
+

@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useForm, type SubmitHandler } from "react-hook-form";
 import Api from "../../ConstAPI";
 import type { IRegister } from "../../interface/interface";
+import { Link } from "react-router";
 
 
 const RegisterPage = () => {
@@ -95,7 +96,13 @@ const RegisterPage = () => {
             </p>
           )}
         </div>
-
+      <Link
+          to="/login"
+          className="block mb-5 text-blue-600 hover:underline hover:text-blue-800 transition duration-200"
+        >
+          تسجيل الدخول
+        </Link>
+        
         <button
           type="submit"
           className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300"

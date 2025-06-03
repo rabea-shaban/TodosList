@@ -17,7 +17,6 @@ function classNames(...classes: string[]) {
 type NavLinkClassProps = { isActive: boolean };
 
 export default function Navbar() {
-  const { pathname } = useLocation();
   const storageKey = "loggedInUser";
   const userDataString = localStorage.getItem(storageKey);
   const userData = userDataString ? JSON.parse(userDataString) : null;

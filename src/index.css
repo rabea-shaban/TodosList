@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@import "tailwindcss";
+@source "./node_modules/flyonui/dist/index.js";
+/* Require only if you want to use FlyonUI JS component */

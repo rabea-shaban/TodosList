@@ -22,12 +22,12 @@ export default function Navbar() {
   const userDataString = localStorage.getItem(storageKey);
   const userData = userDataString ? JSON.parse(userDataString) : null;
 
-  const onLogout = () => {
-    localStorage.removeItem(storageKey);
-    setTimeout(() => {
-      location.replace(pathname);
-    }, 1500);
-  };
+const onLogout = () => {
+  localStorage.removeItem(storageKey);
+  setTimeout(() => {
+    location.replace('/');
+  }, 1500);
+};
 
   const navigation = [
     { name: "Home", href: "/" },

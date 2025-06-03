@@ -43,7 +43,28 @@ Each user can log in, view their own tasks, and perform full CRUD operations. Al
 - ⛔ 404 / Unauthorized route protection
 
 ---
+**👨‍💻 Developed by
+Rabea Shaban Elzayat
 
+🌐 Website: rabeashaban.site
+
+📧 Email: engrabeashaban@gmail.com
+
+📱 WhatsApp: wa.me/201156807072
+
+🔗 LinkedIn: linkedin.com/in/rabea-sh-elzayat
+
+💼 Upwork: upwork.com/freelancers/~01d2bd68b7d6e8fbce
+
+💻 Mostaql: mostaql.com/u/rabea_elzayat
+
+📸 Instagram: instagram.com/rabea_sh_elzayat
+
+📘 Facebook: facebook.com/Rabea.Sh.ELZayat
+
+🧑‍💻 Nafezly: nafezly.com/u/Rabea_sh_elzayat
+
+**
 ---
 
 ## ▶️ Getting Started
@@ -55,16 +76,6 @@ git clone https://github.com/rabea-shaban/TodosList
 cd TodosList
 npm install
 npm run dev
-📎 Useful Links
-Frontend Repo: github.com/rabea-shaban/TodosList
 
-Live App: todos-list-zeta.vercel.app
-
-👨‍💻 Developed by
-Rabea Shaban Elzayat
-🌐 rabeashaban.site
-📧 engrabeashaban@gmail.com
-📱 WhatsApp
-🔗 LinkedIn
 
 

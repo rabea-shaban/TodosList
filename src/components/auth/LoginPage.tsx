@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useForm, type SubmitHandler } from "react-hook-form";
 import { toast } from "react-toastify";
+import Api from "../../ConstAPI";
 import type { ILogin } from "../../interface/interface";
 
 const LoginPage = () => {
@@ -15,7 +16,7 @@ const LoginPage = () => {
     // هنا تقدر تبعت البيانات للباك إند أو تعمل لوجيك تسجيل الدخول
     try {
       const { status, data: resData } = await axios.post(
-        "http://localhost:1337/api/auth/local",
+        `${Api}/auth/local`,
         data
       );
       console.log(resData);
